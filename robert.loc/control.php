@@ -1,6 +1,6 @@
 <?php
 include 'include.php';
-include 'header.php';
+include 'template/header.php';
 ?>
 
 <!-- 
@@ -42,5 +42,5 @@ print_r($post);
 </PRE>
 
 <?php
-include 'footer.php';
+include 'template/footer.php';
 ?>

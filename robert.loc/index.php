@@ -1,6 +1,6 @@
 <?php 
 include 'include.php'; 
-include 'header.php';
+include 'template/header.php';
 ?>
 
     <div>
@@ -36,5 +36,5 @@ else
     </div>
 
 <?php
-include 'footer.php';
+include 'template/footer.php';
 ?>

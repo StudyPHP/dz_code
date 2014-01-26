@@ -5,7 +5,7 @@ function show_css_link ($head)
 {
     for($i=0;$i<count($head['link']);$i++)
     {
-        echo '<link href="css/'.$head['link'][$i].'" rel="stylesheet">';
+        echo '<link href="template/css/'.$head['link'][$i].'" rel="stylesheet">';
     }
 }
     /* Icon-link generated */
@@ -13,7 +13,7 @@ function show_icon_link ($head)
 {
     for($i=0;$i<count($head['icon']);$i++)
     {
-        echo '<link rel="apple-touch-icon-precomposed" sizes="'.$head['icon'][$i].'x'.$head['icon'][$i].'" href="ico/apple-touch-icon-'.$head['icon'][$i].'-precomposed.png">';
+        echo '<link rel="apple-touch-icon-precomposed" sizes="'.$head['icon'][$i].'x'.$head['icon'][$i].'" href="template/ico/apple-touch-icon-'.$head['icon'][$i].'-precomposed.png">';
     }
 }
 /* End: Head generated */
@@ -123,5 +123,3 @@ function log_out()
     }
 }
 /* End: Log out user*/
-
-?>

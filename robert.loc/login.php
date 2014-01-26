@@ -5,7 +5,7 @@ if (isset($_POST['enter']))
 {
     cont_fields($_POST);
 }
-include 'header.php'; 
+include 'template/header.php'; 
 ?>
 
 <div>
@@ -19,5 +19,5 @@ include 'header.php';
 </div>
 
 <?php 
-include 'footer.php'; 
+include 'template/footer.php'; 
 ?>

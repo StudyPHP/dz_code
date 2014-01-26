@@ -5,7 +5,7 @@ if (isset($_POST['enter']))
 {
     show_check_form ($form);
 }
-include 'header.php';
+include 'template/header.php';
 ?>
 
 <!-- Start: Registration Form -->
@@ -24,5 +24,5 @@ show_form ($form);
 <!-- End: Registration Form -->
 
 <?php
-include 'footer.php';
+include 'template/footer.php';
 ?> 

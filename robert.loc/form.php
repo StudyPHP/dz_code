@@ -1,6 +1,6 @@
 <?php 
 include 'include.php'; 
-include 'header.php';
+include 'template/header.php';
 ?>
 
 <!-- Start: Registration Form -->
@@ -17,5 +17,5 @@ show_form ($form);
 <!-- End: Registration Form -->
 
 <?php
-include 'footer.php';
+include 'template/footer.php';
 ?>   
