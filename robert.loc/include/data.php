@@ -73,12 +73,14 @@ $form_required[]='';
 $form_pattern[]='[A-Za-zА-Яа-яЁё]{3,}';
 $form_coment[]='Страна проживания';
 
+/*
 $form_name[]='age';
 $form_pholder[]='150';
 $form_type[]='text';
 $form_required[]='';
 $form_pattern[]='[0-9]{2}';
 $form_coment[]='Ваш возраст';
+*/
 
 $form_name[]='phone';
 $form_pholder[]='100-00-00';
@@ -93,6 +95,20 @@ $form_type[]='text';
 $form_required[]='';
 $form_pattern[]='\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,6}';
 $form_coment[]='Адрес електронной почты';
+
+$form_name[]='login';
+$form_pholder[]='dataVano';
+$form_type[]='text';
+$form_required[]='required';
+$form_pattern[]='[A-Za-zА-Яа-яЁё]{3,}';
+$form_coment[]='Ваш никнэйм';
+
+$form_name[]='password';
+$form_pholder[]='';
+$form_type[]='password';
+$form_required[]='required';
+$form_pattern[]='[A-Za-zА-Яа-яЁё]{3,}';
+$form_coment[]='Ваш пароль';
 
 $form_name[]='enter';
 $form_pholder[]='';
