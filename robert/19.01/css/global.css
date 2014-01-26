@@ -1,0 +1,39 @@
+/* 
+    Created on : 12.01.2014, 18:05:09
+    Author     : Robert
+*/
+
+body {
+    font-family: Arial,Helvetica,sans-serif;
+    text-align: center;
+}
+div {
+    margin: 50px; /* Отступ от краев элемента: 50px; 50px; 50px; 50px; */
+}
+pre {
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: small;
+}
+input {
+    margin: 2px;
+}
+h3 {
+    color: #696969;
+    white-space: pre;
+}
+
+/* Link block */
+a { 
+    text-decoration: none; /* Отменяем подчеркивание у ссылки */
+    color: #9370DB; /* Цвет ссылок */
+}
+a:visited {
+    color: #CFCFCF; /* Цвет посещенных ссылок */
+}
+a:active {
+    color: #ffff00; /* Цвет активных ссылок */
+}
+a:hover {
+    color: #000; /* Цвет ссылок при наведении */
+}
+/* End link block */
