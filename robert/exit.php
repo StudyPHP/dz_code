@@ -5,6 +5,7 @@ log_out();
 
 include 'header.php'; 
 ?>
+<p> coder </p>
 
 <p><?=$user['login']?> досвидание!</p>
 
