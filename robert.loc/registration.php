@@ -1,11 +1,12 @@
 <?php 
-include 'include.php'; 
+include 'include/include.php';
+start_sess ();
 $title = $title.": Registrstion.";
 if (isset($_POST['enter'])) 
 {
     show_check_form ($form);
 }
-include 'template/header.php';
+include 'template/header.php.tpl';
 ?>
 
 <!-- Start: Registration Form -->
@@ -24,5 +25,5 @@ show_form ($form);
 <!-- End: Registration Form -->
 
 <?php
-include 'template/footer.php';
+include 'template/footer.php.tpl';
 ?> 

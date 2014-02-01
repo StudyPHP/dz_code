@@ -1,13 +1,18 @@
 <?php 
-include 'include.php';
+include 'include/include.php';
+start_sess ();
 $title = $title.": LogIn GO!!!";
 if (isset($_POST['enter'])) 
 {
     cont_fields($_POST);
 }
-include 'template/header.php'; 
+include 'template/header.php.tpl'; 
 ?>
 
+<?php
+if(!isset($_POST['enter'])) 
+{
+?>
 <div>
     <form action="" method="POST">
         <input type="text" name="login" placeholder="Логин"><br>
@@ -17,7 +22,14 @@ include 'template/header.php';
     Вы новый пользователь? Зарегистрируйтесь!
     <h3><a href="registration.php">Регистрация</a></h3>
 </div>
+<?php
+}
+else
+{   
+    valid_login ($user);
+}
+?>
 
 <?php 
-include 'template/footer.php'; 
+include 'template/footer.php.tpl'; 
 ?>

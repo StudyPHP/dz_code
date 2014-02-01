@@ -7,6 +7,6 @@
 show_css_link ($head);
 show_icon_link ($head);
 ?>
-        <link rel="shortcut icon" href="ico/<?=$favicon?>">
+        <link rel="shortcut icon" href="../template/ico/<?=$favicon?>">
     </head>   
     <body>

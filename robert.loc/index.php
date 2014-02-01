@@ -1,22 +1,24 @@
 <?php 
-include 'include.php'; 
-include 'template/header.php';
+include 'include/include.php'; 
+hash_valid ();
+session_arr ($_SESSION);
+include 'template/header.php.tpl';
 ?>
 
     <div>
 <?php
-if (isset($_COOKIE['CorpIMT']))
+if ($_COOKIE['hash'])
     {
 ?>
         <h2>Добро пожаловать, 
 <?php
-if (isset($user ['name']))
+if (isset($_SESSION ['name']))
 {
-    echo $user ['name'];
+    echo $_SESSION ['name']." ".$_SESSION['surname'];
 }
 else 
 {
-    echo $user['login'];
+    echo $_SESSION ['login'];
 }
 ?>
         !</h2>
@@ -35,6 +37,8 @@ else
 ?>
     </div>
 
+<h3><a href="test/control.php">Контрольная страница</a></h3>
+
 <?php
-include 'template/footer.php';
+include 'template/footer.php.tpl';
 ?>
