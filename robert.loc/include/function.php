@@ -192,7 +192,7 @@ function hash_to_cookie ()
         setcookie('hash', $_SESSION['hash']);
     }
 }
-    /* Verification hash */
+    /* Verification hash * /
 function hash_valid ()
 {
     if ($_COOKIE['hash'])
@@ -202,14 +202,13 @@ function hash_valid ()
         $hash = mysql_fetch_assoc($valid);
         if ($_COOKIE['hash']!=$hash['hash']) 
         {
-            header('Location: login.php');
+            //header('Location: login.php');
         }
     }
 }
     /* $_SESSION create */
 function session_arr ($_SESSION)
 {
-
     $sql = "SELECT * FROM `user` WHERE `hash`='".$_COOKIE['hash']."'";
     $valid = mysql_query($sql);
     $_SESSION = mysql_fetch_assoc($valid);

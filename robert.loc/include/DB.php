@@ -1,9 +1,4 @@
 <?php
-//$connect = mysql_connect($host_mysql, $user_mysql, $pswd_mysql) or die("Не могу соединиться с MySQL.");
-//mysql_select_db($database_mysql) or die("Не могу подключиться к базе.");
-?>
-
-<?php
 class DB 
 {
     private $host = "localhost";
@@ -15,8 +10,8 @@ class DB
 
     function Connect ()
     {
-        $this->conn = mysql_connect($this->host, $this->user, $this->pass);
-        mysql_select_db($this->db_name);
+        $this->conn = mysql_connect($this->host, $this->user, $this->pass) or die("Не могу соединиться с MySQL.");
+        mysql_select_db($this->db_name) or die("Не могу подключиться к базе.");
     }
 
     function Select($row,$table,$option=false)

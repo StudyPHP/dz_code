@@ -6,7 +6,9 @@ include '../template/header.php.tpl';
 <PRE>
 
 <?php
-hash_valid ();
+$tst = new DB();
+$tst->Connect();
+$tst->Select($row, $table, $option);
 ?>
 
 </PRE>
