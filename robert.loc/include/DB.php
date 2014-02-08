@@ -7,14 +7,14 @@ class DB
     private $pass = "";
     private $field =  "*";
     public $conn;
-
+    
     function Connect ()
     {
         $this->conn = mysql_connect($this->host, $this->user, $this->pass) or die("Не могу соединиться с MySQL.");
         mysql_select_db($this->db_name) or die("Не могу подключиться к базе.");
     }
 
-    function Select($row,$table,$option=false)
+    function Select($field,$row,$table,$option=false)
     {
         if(!$option)
       	{
@@ -23,7 +23,9 @@ class DB
       	$data = mysql_query($sql);
       	while(mysql_fetch_assoc($data))
       	{
-            $array[]= mysql_fetch_assoc($data);
+            $array[]= mysql_fetch_assoc($data); //не работает :( 
+            // проверка
+            print_r ($array); // выдает: Array ([0] =>)
       	}
     }
 
